@@ -44,6 +44,8 @@
     <Compile Include="Application\Controller.cs" />
     <Compile Include="Domain\Ingredient.cs" />
     <Compile Include="Domain\IngredientRepo.cs" />
+    <Compile Include="Domain\Opskrift.cs" />
+    <Compile Include="Domain\OpskriftRepo.cs" />
     <Compile Include="Domain\Recepies.cs" />
     <Compile Include="Domain\RecepiesRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cookingbook.Domain
 {
-    class Ingredient
+    public class Ingredient
     {
         public string Name { get; set; }
 

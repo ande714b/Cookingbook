@@ -11,12 +11,33 @@ namespace Cookingbook.Application
     {
         private RecepiesRepo recepiesRepo;
         private IngredientRepo ingredientRepo;
+        private OpskriftRepo opskriftRepo;
 
 
         public Controller()
         {
             recepiesRepo = new RecepiesRepo();
             ingredientRepo = new IngredientRepo();
+            opskriftRepo = new OpskriftRepo();
+        }
+
+        public string getopskrifttitle(int i)
+        {
+            List<Opskrift> opskrifts = opskriftRepo.GetOpskrifts();
+            return opskrifts[i].Title;
+        }
+
+        public List<string> getopskriftingredients(int i)
+        {
+            List<Opskrift> opskrifts = opskriftRepo.GetOpskrifts();
+            List<Ingredient> ingre = opskrifts[i].ingredients;
+            List<string> returnlist = new List<string>();
+
+            foreach (var item in ingre)
+            {
+                returnlist.Add(item.Name);
+            }
+            return returnlist;
         }
 
         public string getrecepiestile(int i)
