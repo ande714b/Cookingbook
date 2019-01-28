@@ -8,23 +8,19 @@ namespace Cookingbook.Domain
 {
     class IngredientRepo
     {
-        List<Ingredient> ingredients = new List<Ingredient>();
+       private List<Ingredient> ingredients = new List<Ingredient>();
 
-        public List<string> getingredients()
+        public IngredientRepo()
         {
-            List<string> returnlist = new List<string>();
-
             for (int i = 0; i < 3; i++)
             {
                 ingredients.Add(new Ingredient("Ingredient " + i));
             }
+        }
 
-            foreach (var item in ingredients)
-            {
-                returnlist.Add(item.Name);
-            }
-
-            return returnlist;
+        public List<Ingredient> getingredients()
+        {
+            return ingredients;
         }
     }
 }

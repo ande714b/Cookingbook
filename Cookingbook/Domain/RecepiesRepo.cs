@@ -8,21 +8,28 @@ namespace Cookingbook.Domain
 {
     public class RecepiesRepo
     {
-        List<Recepies> recepies = new List<Recepies>();
-        List<string> steps = new List<string> {"step 1", "step 2", "step 3" };
-        public List<Recepies> CreateStandard()
+        private List<Recepies> recepies = new List<Recepies>();
+        
+
+        public RecepiesRepo()
         {
-            Recepies test1 = new Recepies("test1", steps);
-            Recepies test2 = new Recepies("test2", steps);
-            Recepies test3 = new Recepies("test3", steps);
+            List<string> steps = new List<string> { "step 1", "step 2", "step 3" };
+            TimeSpan span1 = TimeSpan.FromMinutes(40);
+            TimeSpan span2 = TimeSpan.FromMinutes(30);
+            TimeSpan span3 = TimeSpan.FromMinutes(15);
+
+            Recepies test1 = new Recepies("test1", steps, span1);
+            Recepies test2 = new Recepies("test2", steps, span2);
+            Recepies test3 = new Recepies("test3", steps, span3);
 
             recepies.Add(test1);
             recepies.Add(test2);
             recepies.Add(test3);
+        }
 
+        public List<Recepies> CreateStandard()
+        {
             return recepies;
-
-
         }
     }
 }

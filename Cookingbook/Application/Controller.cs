@@ -7,26 +7,48 @@ using Cookingbook.Domain;
 
 namespace Cookingbook.Application
 {
-    class Controller
+    public class Controller
     {
-        RecepiesRepo recepiesRepo = new RecepiesRepo();
-        IngredientRepo ingredientRepo = new IngredientRepo();
-        public Dictionary<string, List<string>> getRecepies()
+        private RecepiesRepo recepiesRepo;
+        private IngredientRepo ingredientRepo;
+
+
+        public Controller()
         {
-            Dictionary<string, List<string>> returndic = new Dictionary<string, List<string>>();
-            
-
-            foreach (var item in recepiesRepo.CreateStandard())
-            {
-                returndic.Add(item.Title, item.Steps);
-            }
-
-            return returndic;
+            recepiesRepo = new RecepiesRepo();
+            ingredientRepo = new IngredientRepo();
         }
 
-        public List<string> getIngre()
+        public string getrecepiestile(int i)
         {
-            return ingredientRepo.getingredients();
+            List<Recepies> recepies = recepiesRepo.CreateStandard();
+
+            return recepies[i].Title;
+        }
+
+        public List<string> getrecepiesSteps(int value)
+        {
+            List<Recepies> recepies = recepiesRepo.CreateStandard();
+
+            return recepies[value].Steps;
+        }
+
+        public TimeSpan getrecepiesTime(int value)
+        {
+            List<Recepies> recepies = recepiesRepo.CreateStandard();
+
+            return recepies[value].Time;
+        }
+
+        public List<string> getIngredients()
+        {
+            List<string> returnlist = new List<string>();
+            foreach (var item in ingredientRepo.getingredients())
+            {
+                returnlist.Add(item.Name);
+            }
+
+            return returnlist;
         }
     }
 }
