@@ -34,7 +34,7 @@ namespace UI
             List<string> list = _controller.getIngredients();
             textbox1.Text = list[0];
             textbox2.Text = list[1];
-            textbox3.Text = list[2];
+            textbox3.Text = list[3];
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

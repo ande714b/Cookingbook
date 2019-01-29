@@ -18,7 +18,7 @@ namespace Cookingbook.Application
         {
             recepiesRepo = new RecepiesRepo();
             ingredientRepo = new IngredientRepo();
-            opskriftRepo = new OpskriftRepo();
+            opskriftRepo = new OpskriftRepo(ingredientRepo);
         }
 
         public string getopskrifttitle(int i)
@@ -70,6 +70,15 @@ namespace Cookingbook.Application
             }
 
             return returnlist;
+        }
+
+        public bool checkifingredientIsInStock(string ingredient)
+        {
+            if (getIngredients().Contains(ingredient))
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

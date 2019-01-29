@@ -39,7 +39,11 @@ namespace UI
 
             foreach (var item in _controller.getopskriftingredients(0))
             {
-                outputlist1.Add(item);
+                if (_controller.checkifingredientIsInStock(item))
+                {
+                    outputlist1.Add("X  " + item);
+                }
+                outputlist1.Add("   " + item);
             }
 
 
@@ -47,13 +51,27 @@ namespace UI
 
             foreach (var item in _controller.getopskriftingredients(1))
             {
-                outputlist2.Add(item);
+                if (_controller.checkifingredientIsInStock(item))
+                {
+                    outputlist2.Add("X  " + item);
+                }
+                outputlist2.Add("   " + item);
             }
 
 
 
             box1.ItemsSource = outputlist1;
             box2.ItemsSource = outputlist2;
+        }
+
+        private void Choose1_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Content = new Vejledning(_controller, 0);
+        }
+
+        private void Choose2_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Content = new Vejledning(_controller, 1);
         }
     }
 }

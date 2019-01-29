@@ -44,10 +44,5 @@ namespace UI
         {
             MwFrame.Content = new Opskrifter(controller);
         }
-
-        private void Vejledningbtn(object sender, RoutedEventArgs e)
-        {
-            MwFrame.Content = new Vejledning(controller);
-        }
     }
 }

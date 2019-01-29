@@ -22,43 +22,28 @@ namespace UI
     public partial class Vejledning : Page
     {
         Controller _controller;
-        public Vejledning(Controller controller)
+        public Vejledning(Controller controller, int i)
         {
-            InitializeComponent();
             _controller = controller;
+            InitializeComponent();
 
-            updateListboxes();
+            updateListboxes(i);
         }
 
-        private void updateListboxes()
+        private void updateListboxes(int i)
         {
             List<string> outputlist1 = new List<string>();
-            List<string> outputlist2 = new List<string>();
 
-            outputlist1.Add(_controller.getrecepiestile(0));
+            outputlist1.Add(_controller.getrecepiestile(i));
 
-            foreach (var item in _controller.getrecepiesSteps(0))
+            foreach (var item in _controller.getrecepiesSteps(i))
             {
                 outputlist1.Add(item);
             }
 
-            outputlist1.Add("Tid: " + _controller.getrecepiesTime(0).ToString());
-
-
-
-
-            outputlist2.Add(_controller.getrecepiestile(1));
-
-            foreach (var item in _controller.getrecepiesSteps(1))
-            {
-                outputlist2.Add(item);
-            }
-
-            outputlist2.Add("Tid: " + _controller.getrecepiesTime(1).ToString());
-
+            outputlist1.Add("Tid: " + _controller.getrecepiesTime(i).ToString());
 
             listbox1.ItemsSource = outputlist1;
-            listbox2.ItemsSource = outputlist2;
         }
     }
 }
