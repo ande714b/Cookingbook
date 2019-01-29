@@ -32,24 +32,9 @@ namespace UI
         private void updateInventar()
         {
             List<string> list = _controller.getIngredients();
-            textbox1.Text = list[0];
-            textbox2.Text = list[1];
-            textbox3.Text = list[3];
+            listbox1.ItemsSource = list;
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void Textbox2_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void Textbox3_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
+        
     }
 }

@@ -43,7 +43,10 @@ namespace UI
                 {
                     outputlist1.Add("X  " + item);
                 }
-                outputlist1.Add("   " + item);
+                else
+                {
+                    outputlist1.Add("   " + item);               
+                }
             }
 
 
@@ -55,7 +58,10 @@ namespace UI
                 {
                     outputlist2.Add("X  " + item);
                 }
-                outputlist2.Add("   " + item);
+                else
+                {
+                    outputlist2.Add("   " + item);
+                }
             }
 
 

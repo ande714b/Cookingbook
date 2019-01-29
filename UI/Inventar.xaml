@@ -9,11 +9,6 @@
       Title="Inventar">
 
     <Grid>
-        <Label Content="Inventar" HorizontalAlignment="Left" Margin="279,113,0,0" VerticalAlignment="Top" Width="230"/>
-        <TextBox Name="textbox1" HorizontalAlignment="Left" Height="23" Margin="279,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" TextChanged="TextBox_TextChanged"/>
-        <TextBox Name="textbox2" HorizontalAlignment="Left" Height="23" Margin="279,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" TextChanged="Textbox2_TextChanged"/>
-        <TextBox Name="textbox3" HorizontalAlignment="Left" Height="23" Margin="279,240,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" TextChanged="Textbox3_TextChanged"/>
-
-
+        <ListBox x:Name="listbox1" HorizontalAlignment="Left" Height="315" Margin="99,27,0,0" VerticalAlignment="Top" Width="305"/>
     </Grid>
 </Page>

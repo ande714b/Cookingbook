@@ -18,8 +18,8 @@ namespace Cookingbook.Domain
             TimeSpan span2 = TimeSpan.FromMinutes(30);
             TimeSpan span3 = TimeSpan.FromMinutes(15);
 
-            Recepies test1 = new Recepies("test1", steps, span1);
-            Recepies test2 = new Recepies("test2", steps, span2);
+            Recepies test1 = new Recepies("Kødsovs", steps, span1);
+            Recepies test2 = new Recepies("test1", steps, span2);
             Recepies test3 = new Recepies("test3", steps, span3);
 
             recepies.Add(test1);
