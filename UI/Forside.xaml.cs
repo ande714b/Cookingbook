@@ -31,5 +31,12 @@ namespace UI
         {
 
         }
+
+        // Implementér Forslagsknap her.
+
+        //private void Forslagx_Click(object sender, RoutedEventArgs e)
+        //{
+            
+        //}
     }
 }

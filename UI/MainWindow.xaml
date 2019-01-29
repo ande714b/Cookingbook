@@ -7,14 +7,16 @@
         mc:Ignorable="d"
         Title="Interactive Cookbook" Height="450" Width="800">
     <Grid>
-        <Button x:Name="Forsidex" Content="Forside" HorizontalAlignment="Left" Margin="89,84,0,0" VerticalAlignment="Top" Width="95" Height="33" Click="Forsidebtn"/>
-        <Button x:Name="Inventarx" Content="Inventar" HorizontalAlignment="Left" Margin="89,193,0,0" VerticalAlignment="Top" Width="95" Height="33" Click="Inventarbtn"/>
-        <Button x:Name="Opskrifterx" Content="Opskrifter" HorizontalAlignment="Left" Margin="89,295,0,0" VerticalAlignment="Top" Width="95" Height="33" Click="Opskrifterbtn"/>
+        <Button x:Name="Forsidex" Content="Forside" HorizontalAlignment="Left" Margin="89,84,0,0" VerticalAlignment="Top" Width="95" Height="33" Click="Forsidebtn" Background="GhostWhite"/>
+        <Button x:Name="Inventarx" Content="Inventar" HorizontalAlignment="Left" Margin="89,193,0,0" VerticalAlignment="Top" Width="95" Height="33" Click="Inventarbtn" Background="GhostWhite"/>
+        <Button x:Name="Opskrifterx" Content="Opskrifter" HorizontalAlignment="Left" Margin="89,295,0,0" VerticalAlignment="Top" Width="95" Height="33" Click="Opskrifterbtn" Background="GhostWhite"/>
         <Frame Name="MwFrame" Content="" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="571" Margin="213,10,0,0" NavigationUIVisibility="Hidden"/>
         <Grid.Background>
             <LinearGradientBrush StartPoint="0,0">
-                <GradientStop Color="DarkGray" Offset="0.4" />
-                <GradientStop Color="WhiteSmoke" Offset="1.0" />
+                <GradientStop Color="Gray" Offset="0.0" />
+                <GradientStop Color="DarkGray" Offset="0.5" />
+                <GradientStop Color="WhiteSmoke" Offset="0.75" />
+                <GradientStop Color="Gray" Offset="1.0" />
             </LinearGradientBrush>
         </Grid.Background>
     </Grid>
