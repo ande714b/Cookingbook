@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Interactive Cookbook" Height="450" Width="800">
     <Grid>
         <Button x:Name="Forsidex" Content="Forside" HorizontalAlignment="Left" Margin="89,84,0,0" VerticalAlignment="Top" Width="95" Height="33" Click="Forsidebtn"/>
         <Button x:Name="Inventarx" Content="Inventar" HorizontalAlignment="Left" Margin="89,166,0,0" VerticalAlignment="Top" Width="95" Height="33" Click="Inventarbtn"/>
