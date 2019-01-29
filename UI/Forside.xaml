@@ -9,7 +9,7 @@
       Title="Forside">
 
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="129" Margin="191,107,0,0" TextWrapping="Wrap" Text="Ungå Madspil!&#xA;Du har 500 gram oksekød som kan holde sig 1 dag mere tryk på &quot;Forslag&quot;  for at sehvad du kan lave&#xA;&#xA;&quot;Ikke implemtenter&quot;" VerticalAlignment="Top" Width="248" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="129" Margin="191,107,0,0" TextWrapping="Wrap" Text="Ungå Madspil!&#xA;Du har 500 gram oksekød som kan holde sig 1 dag mere tryk på &quot;Forslag&quot;  for at sehvad du kan lave&#xA;&#xA;&quot;Ikke implementeret&quot;" VerticalAlignment="Top" Width="248" TextChanged="TextBox_TextChanged"/>
         <Button Content="Forslag" HorizontalAlignment="Left" Margin="364,236,0,0" VerticalAlignment="Top" Width="75"/>
 
 

@@ -12,6 +12,11 @@
         <Button x:Name="Opskrifterx" Content="Opskrifter" HorizontalAlignment="Left" Margin="89,248,0,0" VerticalAlignment="Top" Width="95" Height="33" Click="Opskrifterbtn"/>
         <Button x:Name="Vejledningx" Content="Vejledning" HorizontalAlignment="Left" Margin="89,326,0,0" VerticalAlignment="Top" Width="95" Height="33" Click="Vejledningbtn"/>
         <Frame Name="MwFrame" Content="" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="571" Margin="213,10,0,0" NavigationUIVisibility="Hidden"/>
-
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0">
+                <GradientStop Color="DarkGray" Offset="0.4" />
+                <GradientStop Color="WhiteSmoke" Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
     </Grid>
 </Window>
