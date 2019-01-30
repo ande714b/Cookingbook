@@ -9,6 +9,8 @@
       Title="Inventar">
 
     <Grid>
-        <ListBox x:Name="listbox1" HorizontalAlignment="Left" Height="315" Margin="99,27,0,0" VerticalAlignment="Top" Width="305"/>
+        <ListBox x:Name="listbox1" HorizontalAlignment="Left" Height="241" Margin="99,27,0,0" VerticalAlignment="Top" Width="251"/>
+        <TextBox x:Name="ingredientbox" HorizontalAlignment="Left" Height="23" Margin="99,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101"/>
+        <Button x:Name="addbtn" Content="Tilføj" HorizontalAlignment="Left" Margin="224,298,0,0" VerticalAlignment="Top" Width="80" Height="23" RenderTransformOrigin="0.5,0.652" Click="Addbtn_Click"/>
     </Grid>
 </Page>

@@ -34,5 +34,10 @@ namespace Cookingbook.Domain
         {
             return ingredients;
         }
+
+        public void addIngredient(Ingredient ingredient)
+        {
+            ingredients.Add(ingredient);
+        }
     }
 }

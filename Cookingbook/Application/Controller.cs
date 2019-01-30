@@ -40,6 +40,11 @@ namespace Cookingbook.Application
             return returnlist;
         }
 
+        public void addIngredient(string text)
+        {
+            ingredientRepo.addIngredient(ingredientRepo.CreateNewIngredient(text));
+        }
+
         public string getrecepiestile(int i)
         {
             List<Recepies> recepies = recepiesRepo.CreateStandard();

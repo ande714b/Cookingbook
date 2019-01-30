@@ -35,6 +35,11 @@ namespace UI
             listbox1.ItemsSource = list;
         }
 
-        
+        private void Addbtn_Click(object sender, RoutedEventArgs e)
+        {
+            _controller.addIngredient(ingredientbox.Text);
+            ingredientbox.Text = "";
+            updateInventar();
+        }
     }
 }

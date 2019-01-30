@@ -41,11 +41,11 @@ namespace UI
             {
                 if (_controller.checkifingredientIsInStock(item))
                 {
-                    outputlist1.Add("X  " + item);
+                    outputlist1.Add("O  " + item);
                 }
                 else
                 {
-                    outputlist1.Add("   " + item);               
+                    outputlist1.Add("X  " + item);               
                 }
             }
 
@@ -56,11 +56,11 @@ namespace UI
             {
                 if (_controller.checkifingredientIsInStock(item))
                 {
-                    outputlist2.Add("X  " + item);
+                    outputlist2.Add("O  " + item);
                 }
                 else
                 {
-                    outputlist2.Add("   " + item);
+                    outputlist2.Add("X  " + item);
                 }
             }
 
